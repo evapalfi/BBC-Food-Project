@@ -1,0 +1,1329 @@
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* !!! Signin modal !!! */
+
+.signin-modal-overlay {
+    display: none;
+    background-color: rgba(29, 31, 30, 0.7);
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.show-modal {
+    display: block;
+    position: fixed;
+}
+
+
+.signin-modal {
+    margin: 4rem auto;
+    background-color: white;
+    height: 38.5rem;
+    width: 32rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-logo {
+    width: 9rem;
+    padding-top: 1.8rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.8rem;
+}
+
+.signin-modal h3 {
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+}
+
+.email,
+.password {
+    margin: 4rem 2rem 0rem 2rem;
+    border-bottom: 1px solid black;
+}
+
+.email input,
+.password input {
+    border: none;
+    font-size: 23px;
+}
+
+.email input:focus,
+.password input:focus {
+    outline: none;
+}
+
+.signin-modal button {
+    background-color: rgb(0, 120, 255);
+    width: 28rem;
+    height: 3.5rem;
+    margin: 1rem 2rem 1rem 2rem;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.signin-modal > p {
+    color: rgb(0, 120, 255);
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(0, 120, 255);
+    width: 9rem;
+    margin-left: 2rem;
+}
+
+.signin-modal > p:hover {
+    border-bottom: 2px solid rgb(0, 120, 255)
+}
+
+.signin-modal > h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding-top: 1.8rem;
+    border-top: 1px solid rgb(199, 197, 197);
+}
+
+.signin-modal h6 {
+    color: rgb(0, 120, 255);
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(0, 120, 255);
+    text-align: center;
+    width: 6.4rem;
+    margin: 0 auto;
+}
+
+.signin-modal h6:hover {
+    border-bottom: 2px solid rgb(0, 120, 255)
+}
+
+.modal-close {
+    position: absolute;
+    top: 4rem;
+    right: 24.5rem;
+}
+
+
+header {
+    background-color: white;
+    display: flex;
+    height: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(192, 190, 190);
+    padding-left: 7rem;
+}
+
+@media (max-width: 1007px) {
+    header {
+        padding-left: 1rem;
+        width: 32rem;
+    }
+  }
+
+header ul {
+    display: flex;
+    margin: 0;
+}
+
+header ul li {
+    padding-right: 1.3rem; 
+    font-size: 13px;
+    padding-top: 0.8rem;
+}
+
+.nav-bar {
+    padding: 0;
+}
+
+.nav-bar li {
+    border-left: 1px solid rgb(192, 190, 190);
+    padding-left: 1rem;
+}
+
+@media (max-width: 1007px) {
+    .sport,
+    .weather,
+    .iplayer,
+    .sounds,
+    .bitesize,
+    .cbeebies,
+    .searchBBC {
+        display: none;
+    }
+  }
+
+.nav-bar li:last-child {
+    border-right: 1px solid rgb(192, 190, 190);
+    padding-left: 4rem;
+}
+
+.smallsearch-icon {
+    width: 1.8rem;
+    position: absolute;
+    top: 0.4rem;
+    right: 14rem;
+}
+
+@media (max-width: 1007px) {
+    .smallsearch-icon {
+        display: none;
+}
+  }
+
+header ul a {
+    color: black;
+}
+
+.signin {
+    padding-right: 3rem;
+    padding-left: 1rem;
+    border-left: 1px solid rgb(192, 190, 190);
+}
+
+@media (max-width: 1007px) {
+    .signin {
+        padding-right: 0;
+    }
+  }
+
+@media (max-width: 1007px) {
+    .signin li:nth-child(2) {
+        display: none;
+    }
+  }
+
+.signin:hover {
+    border-bottom: 4px solid rgb(0, 109, 239);
+}
+
+.bell:hover {
+    border-bottom: 4px solid blue;
+}
+
+.home:hover {
+    
+    border-bottom: 4px solid black;
+}
+
+.news:hover {
+    border-bottom: 4px solid red;
+}
+
+.sport:hover {
+    border-bottom: 4px solid yellow;
+}
+
+.weather:hover {
+    border-bottom: 4px solid rgba(0, 153, 255, 0.863);
+}
+
+.iplayer:hover {
+    border-bottom: 4px solid pink;
+}
+
+.sounds:hover {
+    border-bottom: 4px solid orange;
+}
+
+.bitesize:hover {
+    border-bottom: 4px solid purple;
+}
+
+.cbeebies:hover {
+    border-bottom: 4px solid #becd32;
+}
+
+.logo {
+    padding-right: 2rem;
+    width: 5rem;
+}
+
+@media (max-width: 1007px) {
+    .logo {
+        padding-right: 1rem;
+    }
+  }
+
+.user-avatar {
+    width: 1rem;
+}
+
+/* !!! Hidden Bell !!! */
+.hidden-bell {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 7rem;
+    width: 18rem;
+}
+
+@media (max-width: 1007px) {
+    .hidden-bell {
+        padding-left: 1rem;
+    }
+  }
+
+.show-bell {
+    display: block;
+}
+
+.hidden-bell h1 {
+    color: rgb(51, 51, 51);
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.hidden-bell p {
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.flex-bell {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.flex-bell p:first-child {
+    background-color: rgb(0, 120, 255);
+    color: white;
+    font-weight: bold;
+    padding: 0.7rem;
+}
+
+.flex-bell p:first-child:hover {
+    color: rgb(51, 51, 51);
+}
+
+.flex-bell p:last-child {
+    color: rgb(0, 120, 255);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.flex-bell p:last-child:hover {
+    color: rgb(51, 51, 51);
+}
+
+
+/* !!! Hidden searchbar !!!  */
+
+.hidden-searchbar {
+    display: none;
+}
+
+.show-searchbar {
+    display: block;
+}
+
+.flex {
+    display: flex;
+    height: 5rem;
+    background-color: rgb(17, 136, 187);
+    align-items: center;
+    padding-left: 7rem;
+}
+
+
+.hidden-searchbar h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+    /* margin: 0; */
+    
+}
+
+.hidden-search-container {
+    margin: auto 1rem;
+}
+
+.hidden-search-container input {
+    height: 2.7rem;
+    border: none;
+    width: 59.5rem;
+    padding-left: 1rem;
+    padding-right: 0;
+}
+
+.hidden-largesearch-icon {
+    position: relative;
+    right: 3rem;
+    top: 0.6rem;
+}
+
+.close-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(https://nav.files.bbci.co.uk/searchbox/d7b2c2e00c3af84d022369df38fc1087/img/gel-icon-no.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(17, 136, 187);
+    
+}
+
+/* !!! Hidden MORE !!! */
+.hiddenMore {
+    display: none;
+}
+
+.show-more {
+    display: block;
+}
+
+.flex-more {
+    height: 3.5rem;
+    display: flex;
+    gap: 7rem;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 7rem;
+}
+
+@media (max-width: 1007px) {
+    .flex-more {
+        height: 3.5rem;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        padding-left: 1rem;
+    }
+  }
+
+#hiddenMore h1 {
+    font-weight: normal;
+    font-size: 28px;
+}
+
+@media (max-width: 1007px) {
+    #hiddenMore h1 {
+        font-size: 37px;
+    }
+  }
+
+#hiddenMore a {
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0.4rem 6rem 0.4rem 0.4rem;
+}
+
+#hiddenMore a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* !!!!!nav section */
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    height: 4.5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+@media (max-width: 1007px) {
+   nav {
+        display: block;
+        width: 100%;
+        height: 8.5rem;
+        padding-left: 1rem;
+        padding-right: 8rem;
+    }
+  }
+
+.food-logo {
+    width: 8rem;
+    padding-right: 2rem;
+}
+
+@media (max-width: 1007px) {
+    .food-logo {
+         padding-top: 1rem;
+     }
+   }
+
+.search-container {
+    padding-top: 1.5rem;
+}
+
+.search-container input {
+    border: 1px solid #eee;
+    color: rgb(74, 74, 74);
+    font-size: 16px;
+    height: 2.5rem;
+    padding: 0;
+    text-indent: 8px;
+    width: 66.2rem;
+}
+
+@media (max-width: 1007px) {
+    .search-container input {
+        width: 30.2rem;
+     }
+   }
+
+.search-container input:focus {
+    outline: none;
+}
+
+#largesearch-icon {
+    width: 1.5rem;
+    position: relative;
+    left: 64rem;
+    bottom: 2rem;
+}
+
+@media (max-width: 1007px) {
+    #largesearch-icon {
+        /* width: 1.5rem;
+        position: relative;
+        left: 28rem;
+        bottom: 2rem; */
+        display: none;
+     }
+   }
+
+
+/* !!!! food-nav */
+
+.food-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(119, 119, 119);
+    height: 2rem;
+    padding-right: 6rem;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1007px) {
+    .food-nav {
+        display: none;
+     }
+   }
+
+.food-nav ul {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.food-nav a {
+    color: rgb(205, 233, 191);
+    padding: 8.5px;
+}
+
+.food-nav ul li {
+    border-left: 1px solid rgb(153, 153, 153);
+}
+
+.food-nav ul li:first-child a {
+    color: black;
+    background-color: rgb(238, 238, 238);
+    padding: 8.5px;
+}
+
+.food-nav ul li:first-child a:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.food-nav ul li a:hover,
+.food-nav > a:hover {
+    text-decoration: underline;
+    background-color: rgb(79, 79, 79);
+}
+
+.recipes-dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    opacity: 1.5;
+    height: 2rem;
+    width: 100vw;
+}
+
+.show-recipes-dropdown {
+    display: block;
+}
+
+.recipes-dropdown > ul {
+    display: flex;
+    margin: 0 5rem;
+    align-items: center;
+    height: 2rem;
+}
+
+.recipes-dropdown ul li {
+    border-left: 1px solid rgb(153, 153, 153);
+}
+
+.recipes-dropdown ul li:first-child {
+    border-left: none;
+}
+
+.recipes-dropdown ul li a:hover {
+    text-decoration: underline;
+    background-color: rgba(0,0,0,.5);
+}
+
+.recipes-dropdown a {
+    color: rgb(205, 233, 191);
+    padding: 8.5px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* !!!!!! hero !!!! */
+.hero {
+    height: 29rem;
+    background-image: url(https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/vietnamese_beef_pho_22510_16x9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 1007px) {
+    .hero {
+        height: 18rem;
+    width: 32rem;
+    background-size: contain;
+     }
+   }
+
+.recipe-container {
+    position: relative;
+    top: 18rem;
+    left: 7.7rem;
+    height: 8rem;
+    width: 43.5rem;
+    background-color: white;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(58, 58, 58);
+}
+
+@media (max-width: 1007px) {
+    .recipe-container {
+        top: 18rem;
+        left: -1.3rem;
+        height: 5rem;
+        width: 100%;
+     }
+   }
+
+   @media (max-width: 1007px) {
+    .dont-show {
+        display: none;
+     }
+   }
+
+.recipe-container h1 {
+    margin: 0;
+    color: rgb(58, 58, 58);
+}
+
+.recipe-container h1:hover {
+    color: rgb(0, 115, 186);
+    text-decoration: underline;
+}
+
+.collection,
+.story {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(118, 118, 118);
+}
+
+/* !!!! card-container !!!  */
+
+.card-container {
+    background-color: rgb(238, 238, 238);
+    height: 16rem;
+    padding: 2rem 4rem 4rem 7rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1007px) {
+    .card-container {
+        display: none;
+     }
+   }
+
+.big-card {
+    display: flex;
+    height: 18rem;
+}
+
+.bigcard-pic {
+    height: 16rem;
+}
+
+.text-container {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 16rem;
+    width: 15rem;
+    background-color: white;
+    padding-left: 1rem;
+}
+
+.text-container h2 {
+    color: rgb(58, 58, 58);
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-container h2:hover {
+    color: rgb(0, 115, 186);
+    text-decoration: underline;
+}
+
+.text-container p:last-child {
+    margin-top: 6.7rem;
+}
+
+.small-pic {
+    width: 14rem;
+}
+
+.smalltext-container {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1rem;
+}
+
+.smalltext-container h2 {
+    color: rgb(58, 58, 58);
+    font-size: 16px;
+    margin-bottom: 3.5rem;
+    margin-top: 1rem;
+}
+
+.smalltext-container h2:hover {
+    color: rgb(0, 115, 186);
+    text-decoration: underline;
+}
+
+.small-card {
+    height: 16rem;
+    background-color: white;
+}
+
+/* !!!! Top Stories !!! */
+
+.top-stories {
+    margin-left: 7rem;
+    margin-right: 5rem;
+}
+
+/* @media (max-width: 1007px) {
+    .top-stories {
+        margin: 0;
+     }
+   } */
+
+.top-stories h2 {
+    color: rgb(58, 58, 58);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-row-gap: 0px;
+}
+
+@media (max-width: 1007px) {
+    .story-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 16px;
+     }
+   }
+
+.story-card {
+    background-color: rgb(238, 238, 238);
+    width: 19rem;
+}
+
+.story-pic {
+    width: 19rem;
+}
+
+.story-container {
+    width: 19rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.story-container h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    font-size: 16px;
+    color: rgb(74, 74, 74);
+    width: 17rem;
+}
+
+.story-container h3:hover {
+    color: rgb(0, 115, 186);
+    text-decoration: underline;
+}
+
+.top-stories > p {
+    margin-top: 2rem;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(74, 74, 74);
+}
+
+.top-stories > p a {
+    color: rgb(1, 125, 24);
+    font-weight: bold;
+}
+
+.story {
+    margin-top: 2.2rem;
+}
+
+/* !!! Today recepies !!! */
+
+.today-recepies > h2 {
+    margin: 3rem 4rem  2rem 7rem ;
+    padding-top: 2rem;
+    border-top: 1px solid rgb(209, 207, 207);
+    color: rgb(58, 58, 58);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+@media (max-width: 1007px) {
+    .today-recepies > h2 {
+        margin: 2rem 2rem  2rem 2rem ;
+     }
+   }
+
+.todayrecepies-pic {
+    width: 16rem;
+}
+
+@media (max-width: 1007px) {
+    .todayrecepies-pic {
+       width: 14rem;
+     }
+   }
+
+.todayrecepies-grid {
+    margin-left: 15rem;
+    margin-right: 8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+@media (max-width: 1007px) {
+    .todayrecepies-grid {
+        margin-left: 2rem;
+        margin-right: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+     }
+   }
+
+.today-card {
+    color: rgb(58, 58, 58);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(238, 238, 238);
+    width: 16rem;
+}
+
+@media (max-width: 1007px) {
+    .today-card {
+        width: 14rem;
+     }
+   }
+
+.todayrecepies-container {
+    margin-left: 1rem;
+}
+
+.todayrecepies-container h3 {
+    font-size: 16px;
+    margin-bottom: 4rem;
+}
+
+.todayrecepies-container h3 a {
+    color: rgb(58, 58, 58);
+}
+
+
+
+.todayrecepies-container h3:hover {
+    color: rgb(0, 115, 186);
+    text-decoration: underline;
+}
+
+/* !!! Recepies from Programmes !!! */
+
+.programm-pic {
+    width: 55%;
+    padding-bottom: 1rem;
+}
+
+.programm-grid {
+    margin-left: 7rem;
+    margin-right: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 16px;
+}
+
+@media (max-width: 1007px) {
+    .programm-grid {
+        margin-left: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 8px;
+        grid-row-gap: 16px;
+    }
+  }
+
+.programm-card {
+    width: 25.5rem;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    color: rgb(58, 58, 58);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.programm-container {
+    margin-left: 1rem;
+}
+
+.programm-container h3 {
+    font-size: 16px;
+}
+
+.programm-container h3:hover {
+    color: rgb(0, 115, 186);
+    text-decoration: underline;
+}
+
+.programm-container p {
+    font-size: 14px;
+}
+
+/* !!! how to cook session !!! */
+
+.how-tocook {
+    height: 28rem;
+    background-color: rgb(64, 85, 71);
+    padding-left: 7rem;
+    padding-right: 4rem;
+}
+
+@media (max-width: 1007px) {
+    .how-tocook {
+        height: 90rem;
+        width: 25rem;
+        padding-left: 2rem;
+    }
+  }
+
+.how-tocook h2 {
+    padding-top: 2rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.video-pic {
+    width: 19rem;
+}
+
+.video-card {
+    background-color: white;
+}
+
+.cook-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 0px;
+}
+
+@media (max-width: 1007px) {
+    .cook-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 8px;
+        grid-row-gap: 16px;
+    }
+  }
+
+.videotext-container {
+    padding-left: 1rem;
+}
+
+.videotext-container h3 {
+    color: rgb(58, 58, 58);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.videotext-container h3:hover {
+    color: rgb(0, 115, 186);
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.how-tocook > p {
+    margin-top: 2rem;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.how-tocook > p a {
+    color: white;
+    font-weight: bold;
+}
+
+.video-button {
+    /* position: absolute;
+    top: 151.65rem; */
+    position: relative;
+    top: 10.69rem;
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    background-color: white;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiI+PHBhdGggZD0iTTMgMzJsMjYtMTZMMyAwdjMyeiIvPjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.5rem;
+}
+
+/* !!! Season Easter !!! */
+.season {
+    height: 10rem;
+    background-image: url(https://food-images.files.bbci.co.uk/food/timed_promos/easter2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-left: 7rem;
+    padding-top: 2rem;
+    color: rgb(58, 58, 58);
+}
+
+@media (max-width: 1007px) {
+    .season {
+        height: 8rem;
+        width: 30rem;
+        padding-left: 1rem;
+    }
+  }
+
+.season h2 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+}
+
+.season h2:nth-child(2) {
+    font-weight: normal;
+}
+
+.season p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgb(58, 58, 58);
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+@media (max-width: 1007px) {
+    .season p {
+        padding-top: 0rem;
+    }
+  }
+
+.get-recipes {
+    position: relative;
+    top: -6rem;
+    left: 16rem;
+    height: 2.5rem;
+    width: 8rem;
+    background-color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+    border: 1px solid rgb(202, 200, 200);
+}
+
+@media (max-width: 1007px) {
+    .get-recipes {
+        top: -5rem;
+        left: 11rem;
+    }
+  }
+
+.get-recipes:hover {
+    text-decoration: underline;
+}
+
+/* !!! social media section !!! */
+
+.social-media {
+    background-color: rgb(238, 238, 238);
+    height: 8rem;
+    padding-left: 7rem;
+    padding-top: 2rem;
+}
+
+@media (max-width: 1007px) {
+    .social-media {
+        padding-left: 1rem;
+        height: 11rem;
+        width: 30rem;
+    }
+  }
+
+.find-us {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 3rem;
+}
+
+@media (max-width: 1007px) {
+    .find-us {
+        display: block;
+    }
+  }
+
+.find-us > p {
+    color: rgb(58, 58, 58);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.find-us > p a {
+    color: rgb(58, 58, 58);
+    font-weight: bold;
+}
+
+.find-us p:first-child {
+    border-right: 1px solid rgb(58, 58, 58);
+    padding-right: 2rem;
+    height: 20px;
+}
+
+@media (max-width: 1007px) {
+    .find-us p:nth-child(2) {
+        padding: 1.5rem 0;
+    }
+  }
+
+@media (max-width: 1007px) {
+    .find-us p:first-child {
+        border-bottom: 1px solid rgb(167, 164, 164);
+        border-right: none;
+        padding-bottom: 1.5rem;
+        margin-right: 1rem;
+    }
+  }
+
+.socialmedia-logo {
+    width: 2rem;
+}
+
+.socialmedia-logo-container {
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* !!! Pink iPlayer !!! */
+
+.iplayer-section {
+    background-color: rgb(245, 73, 151);
+    height: 22rem;
+    padding-left: 7rem;
+    padding-right: 14rem;
+}
+
+@media (max-width: 1007px) {
+    .iplayer-section {
+        display: none;
+    }
+  }
+
+.iplayer-section h2 {
+    padding-top: 2rem;
+    color: white;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
+
+.iplayer-card {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 16rem;
+}
+
+.iplayer-container {
+    padding-left: 1rem;
+}
+
+.iplayer-container h3 {
+    font-size: 16px;
+}
+
+.iplayer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 0px;
+}
+
+/* !!! footer !!! */
+
+footer > h1 {
+    display: none;
+}
+
+@media (max-width: 1007px) {
+    footer > h1 {
+        display: block;
+        padding-top: 1rem;
+        margin-top: 0;
+    }
+  }
+
+footer {
+    background-color: rgb(76, 76, 76);
+    height: 10rem;
+    color: white;
+    padding-left: 7rem;
+    padding-right: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1007px) {
+    footer {
+        padding-left: 1rem;
+        height: 38rem;
+        width: 26rem;
+    }
+  }
+
+.footer-list-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 0px;
+    margin-right: 4rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(148, 148, 148);
+}
+
+@media (max-width: 1007px) {
+    .footer-list-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+.footer-card > p {
+    font-size: 13px;
+    font-weight: bold;
+    border-right: 1px solid rgb(148, 148, 148);
+}
+
+.footer-card > p:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1007px) {
+    .footer-card p {
+        font-size: 1.2rem;
+    }
+  }
+
+.about-BBC {
+    display: flex;
+    gap: 1rem;
+    padding-left: 0;
+    font-size: 13px;
+}
+
+@media (max-width: 1007px) {
+    .about-BBC {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 16px;
+    }
+  }
+
+footer > p {
+    font-size: 13px;
+}
+
+@media (max-width: 1007px) {
+    footer > p {
+        font-size: 16px;
+    }
+  }
+
+footer > p a {
+    font-weight: bold;
+    color: white;
+}
+
+footer > p a:last-child:hover {
+    text-decoration: underline;
+}
